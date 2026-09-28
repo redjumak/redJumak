@@ -253,5 +253,9 @@
 
 </main>
 
+  <script>
+    const goUrl = new URLSearchParams(location.search).get('go');
+    if (goUrl) document.querySelector('.cta').href = goUrl;
+  </script>
 </body>
 </html>
